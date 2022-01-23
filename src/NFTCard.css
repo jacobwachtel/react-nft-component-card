@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: hsl(215, 51%, 70%);
+    --color-secondary: hsl(178, 100%, 50%);
+
+    --color-blue-bg: hsl(217, 54%, 11%);
+    --color-blue-bg-2: hsl(216, 50%, 16%);
+    --color-blue-line: hsl(215, 32%, 27%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit',
+        sans-serif;
+    background-color: var(--color-blue-bg);
+    color: var(--color-white);
+}
+
+.container {
+    width: 30rem;
+    height: 50rem;
+    background-color: var(--color-blue-bg-2);
+    border-radius: 8px;
+    box-shadow: 0rem 1.5rem 3rem 0rem rgba(0, 0, 0, .2);
+    padding: 2rem;
+}
+
+.img {
+    height: 55%;
+    width: 100%;
+    background-image: url(./images/image-equilibrium.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.heading-primary {
+    font-size: 2rem;
+    padding: 1.5rem 0;
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-blue-line);
+}
+
+.stat__eth {
+    height: 1.4rem;
+    padding-right: .8rem;
+}
+
+.price {
+    display: flex;
+    font-size: 1.3rem;
+    color: var(--color-secondary);
+}
+
+.sell-date {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--color-primary);
+}
+
+.clock {
+    height: 1.3rem;
+    padding-right: .4rem;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+#avatar {
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-right: 1rem;
+}
+
+.footer p {
+    font-size: 1.3rem;
+    color: var(--color-primary);
+}
+
+.footer span {
+    color: var(--color-white);
+}

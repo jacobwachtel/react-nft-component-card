@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: hsl(215, 51%, 70%);
+    --color-secondary: hsl(178, 100%, 50%);
+
+    --color-blue-bg: hsl(217, 54%, 11%);
+    --color-blue-bg-2: hsl(216, 50%, 16%);
+    --color-blue-line: hsl(215, 32%, 27%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit',
+    sans-serif;
+    background-color: var(--color-blue-bg);
+    color: var(--color-white);
+}
+
+.container {
+    width: 30rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-blue-bg-2);
+    border-radius: 10px;
+    box-shadow: .5rem 1rem 1.5rem 1rem rgba(0,0,0, .20);
+    padding: 2rem;
+    transition: all .2s ease-in;
+}
+
+.container:hover {
+    transform: scale(1.1);
+}
+
+.NFT__image {
+    height: 55%;
+    width: 100%;
+    background-image: url(./images/image-equilibrium.jpg);
+    background-position: center;
+    background-size: cover;    
+    border-radius: 5px;
+}
+
+.content {
+    margin: 2.2rem 0;
+}
+
+.heading-primary {
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-primary);
+    letter-spacing: .5px;
+}
+
+.stats {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.eth {
+    display: flex;
+    align-items: center;
+    color: var(--color-secondary);
+    font-size: 1.4rem;
+}
+
+.eth img {
+    margin-right: .5rem;
+    height: 1.6rem;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--color-primary);
+}
+
+.time img {
+    margin-right: .5rem;
+    height: 1.4rem;
+}
+
+.footer {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--color-blue-line);
+    font-size: 1.4rem;
+    letter-spacing: .8px;
+    
+}
+
+#avatar {
+    width: 3rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+p {
+    color: var(--color-primary);
+}
+
+p span {
+    color: var(--color-white);
+}
+
+
+
