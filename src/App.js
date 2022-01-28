@@ -1,5 +1,5 @@
 import './App.css';
-import NFTCard from './NFTCard';
+import NFTCard from './components/NFTCard';
 
 function App() {
    return (
